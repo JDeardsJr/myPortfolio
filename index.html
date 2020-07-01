@@ -3,42 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeff's Portfolio Wireframe</title>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <meta name="discription" content="Jeff Deards' Portfolio Site">
+    <title>Jeff's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <nav role="navigation">Nav Bar</nav>
-    <header role="banner">
-        <h1>Hero</h1>
-        <div class="hero-image">image element goes here</div>
-        <p>paragraph</p>
+    <nav role="navigation">
+        <div class="navbar">
+            <a href="#home" class="name">J.DEARDS</a>
+            <a href="javascript:void(0);" class="hamburger js-hamburger">
+                <i class="fa fa-bars"></i>
+            </a>
+		    <ul class="menu">
+			    <li>
+                    <a class="jumper" href="#about">About</a>
+                </li>
+			    <li>
+                    <a class="jumper" href="#projects">Projects</a>
+                </li>
+			    <li>
+                    <a class="jumper" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="slider-container">
+            <ul class="slider-menu js-slider-menu">
+                <li>
+                    <a class="jumper" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="jumper" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="jumper" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+       
+    </nav>
+
+    <header role="banner" id="home">
+        <h1>Hi, I'm Jeff!</h1>
+        <img class="hero-image" src="images/HeroImageAEdit.JPG" alt="A sketched picture of Jeff">
+        <p class="margin-change">I'm a front-end <span class="bold-text">Web Developer</span> who enjoys making cool things work on the internet.</p>
     </header>
+
     <main role="main">
-        <section class="section">
+
+        <section class="canvas" id="about">
             <h2>About Me</h2>
-            <p>paragraph</p>
-            <p>paragraph</p>
+            <p>As a recent graduate of the Web Developer Track offered through the online bootcamp, Bloc, I have always enjoyed learning how to make things.  A few years ago, my passion for theatre led me to attempt to create a website for a fledgling theatre company.   Through that project, I discovered a whole new passion for website development that has since transformed itself into an exciting career path!</p>
+            <p>I am currently based in the Los Angeles area, but am open to relocating for the right opportunity.  In addition to spending time with my best friends HTML, CSS, Javascript, and jQuery, I also enjoy hiking, acting, and finding the next series to binge watch on Amazon Prime.</p>
         </section>
 
-        <section class="container" id="portfolio">
+        <section class="container" id="projects">
             <h2>My Projects</h2>
             <section class="project">
-                <div class="project-image">image element goes here</div>
-                <h3>Title</h3>
-                <p>paragraph</p>
-                <button class="button" onclick="">button 1</button>
-                <button class="button" onclick="">button 2</button>
+                <img class="project-image" src="images/QuizAppScreenshotEdit.png" alt="A screenshot of the Musical Theatre Quiz start screen">
+                <h3>Musical Theatre Quiz</h3>
+                <p>An interactive quiz app that takes users through a brief series of questions to test their knowledge of Musical Theatre.  This app was an homage to my childhood and young adult life spent on the stage.</p>
+                <p class="technologies">Technologies used: HTML, CSS, Javascript, jQuery</p>
+                <a class="button" href="https://github.com/JDeardsJr/Quiz-App-Assignment.git" target="_blank">GitHub</a>
+                <a class="button" href="https://jdeardsjr.github.io/Quiz-App-Assignment/" target="_blank">Live App</a>
             </section>
         </section>
 
-        <section class="section">
+        <section class="canvas" id="contact">
             <h2>Contact Me</h2>
-            <p>paragraph</p>
-            <p>paragraph</p>
+            <p>I am currently looking for work and would love the opportunity to tell you more about me!</p>
+            <p>I can be reached via email, GitHub, or LindedIn by clicking the corresponding icon below.</p>
         </section>
     </main>
-    <footer role="contentinfo">Footer</footer>
-    
+    <footer role="contentinfo">
+        <ul class="social">
+			<li class="social_icon">
+                <a class="social-links" href="mailto:jdeards84@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+			<li class="social_icon">
+                <a class="social-links" href="https://github.com/JDeardsJr" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+			<li class="social_icon">
+                <a class="social-links" href="https://linkedin.com/in/jeff-deards-9JD" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+		</ul>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
