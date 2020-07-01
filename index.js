@@ -1,7 +1,5 @@
 'use strict';
 
-let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
-
 // this function toggles the active class on the js-slider-menu
 function toggleSliderMenu() {
     $('.js-slider-menu').toggleClass('active');
@@ -17,7 +15,7 @@ function reasoningHomeClick() {
 // this function listens for user to click on the home logo 
 // runs a function to determine if it should close the slider menu 
 function handleHomeClick() {
-    $('nav').on(touchEvent, '.name', function(event) {
+    $('nav').on('click', '.name', function(event) {
         console.log('`handleHomeClick` ran');
         reasoningHomeClick();
     });
@@ -26,7 +24,7 @@ function handleHomeClick() {
 
 // this function listens for user to click on hamburger menu and calls the toggleSliderMenu function
 function handleSliderMenu() {
-    $('nav').on(touchEvent, '.fa-bars', function(event) {
+    $('nav').on('click', '.fa-bars', function(event) {
         console.log('`handleSliderMenu` ran');
         toggleSliderMenu();
     });
@@ -35,7 +33,7 @@ function handleSliderMenu() {
 
 // this function listens for user to click on a menu item and calls the toggleSliderMenu function
 function handleSliderExit() {
-    $('.js-slider-menu').on(touchEvent, '.jumper', function(event) {
+    $('.js-slider-menu').on('click', '.jumper', function(event) {
         console.log('`handleSliderExit` ran');
         toggleSliderMenu();
     });
