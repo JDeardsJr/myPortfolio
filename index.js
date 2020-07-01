@@ -24,7 +24,7 @@ function handleHomeClick() {
 
 // this function listens for user to click on hamburger menu and calls the toggleSliderMenu function
 function handleSliderMenu() {
-    $('nav').on('click', '.fa-bars', function(event) {
+    $('nav').on('click', '.js-hamburger', function(event) {
         console.log('`handleSliderMenu` ran');
         toggleSliderMenu();
     });
