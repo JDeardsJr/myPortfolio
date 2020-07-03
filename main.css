@@ -16,6 +16,13 @@ body {
     line-height: 1.5;
   }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .navbar,
 footer {
     padding: 3% 4%;
@@ -25,10 +32,6 @@ footer {
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,16 +98,12 @@ footer {
         rgba(11, 0, 61, 0.671),
         rgba(11, 0, 61, 0.986)
       );
-    position: fixed;
-    top: 7.6%;
+    position: absolute;
     right: -100%;
     visibility: hidden;
     pointer-events: none;
     transition: .2s all linear;
-    padding-top: 6.4%;
-    padding-bottom: 2%;
-    padding-right: 3%;
-    padding-left: 3%;
+    padding: 2.5% 3%;
     list-style-type: none;
 }
 
